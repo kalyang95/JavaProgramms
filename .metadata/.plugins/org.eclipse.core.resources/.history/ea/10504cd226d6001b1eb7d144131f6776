@@ -1,0 +1,12 @@
+package com.atm;
+
+public class ATM {
+	synchronized(this) {
+	public void checkBalance(String name) {
+		System.out.println(name + " is checking the balance");
+	}
+	public void withdraw(String name, int amount) {
+		System.out.println(name+" is withdrawing "+amount+" dollars");
+	}
+	}
+}
